@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cotización - Appareil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Appareil - Sistema de Cotización</h1>
+        <nav>
+            <button id="nueva-cotizacion">Nueva Cotización</button>
+            <img src="appareil.png" alt="" class="imgnav">
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Nueva Cotización</h2>
+            <form id="cotizacion-form">
+                <label>Cliente:
+                    <input type="text" name="cliente" placeholder="Nombre del Cliente" required>
+                </label>
+                <label>Producto:
+                    <input type="text" name="producto" placeholder="Nombre del Producto" required>
+                </label>
+                <label>Precio:
+                    <input type="number" name="precio" placeholder="Precio del Producto" required>
+                </label>
+                <button type="button" id="agregar-producto">Agregar Producto</button>
+            </form>
+            <div id="lista-productos"></div>
+            <br>
+            <button id="generar-cotizacion">Generar Cotización</button>
+        </div>
+        <div class="historial-container" id="historial-container">
+            <h2>Historial de Cotizaciones</h2>
+            <div id="historial"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Appareil Ltda. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
